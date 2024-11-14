@@ -1,0 +1,35 @@
+{
+  "name": "collaborative-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open"
+  },
+  "dependencies": {
+    "@stomp/stompjs": "^7.0.0",
+    "bootstrap": "^3.4.1",
+    "jquery": "^3.7.1",
+    "monaco-editor": "^0.52.0",
+    "sockjs-client": "^1.6.1",
+    "xterm": "^5.3.0",
+    "y-monaco": "^0.1.6",
+    "y-presence": "^0.2.3",
+    "y-protocols": "^1.0.6",
+    "y-quill": "^1.0.0",
+    "y-websocket": "^2.0.4",
+    "yjs": "^13.6.19"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "monaco-editor-webpack-plugin": "^7.1.0",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}

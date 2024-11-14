@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Collaborative Code Editor</h2>
+
+<div id="controls" class="form-inline">
+    <button id="runBtn" class="btn btn-primary">Run</button>
+    <button id="commitButton" class="btn btn-primary">Commit</button>
+    <button id="branchBtn" class="btn btn-primary">Make A Branch</button>
+</div>
+
+<div id="editor">
+
+</div>
+
+<h4>Terminal Output:</h4>
+<div id="terminal-container"></div>
+
+<button id="openProjectsButton">Projects</button>
+
+<div>
+    <button id="createRoomBtn">Create Room</button>
+    <input type="text" id="roomIdInput" placeholder="Enter Room ID to Join">
+    <button id="joinRoomBtn">Join Room</button>
+</div>
+
+<div id="user-list-container">
+    <ul id="user-list"></ul>
+</div>
+
+<div id="projectsPanel" class="panel">
+    <div class="panel-header">
+        <button id="createProjectButton">Create New Project</button>
+        <button id="closeProjectsPanel" class="close-btn">&times;</button>
+    </div>
+    <h2>My Projects</h2>
+    <ul id="projectsList">
+    </ul>
+    <h3>My Branches</h3>
+    <ul id="branchesList"></ul>
+</div>
+
+<div id="renameModal" class="modal">
+    <div class="modal-content">
+        <span id="closeRenameModal" class="close-btn">&times;</span>
+        <h3>Rename Project</h3>
+        <input type="text" id="renameProjectInput" placeholder="New project name">
+        <button id="renameProjectConfirm">Rename</button>
+    </div>
+</div>
+
+<div id="createProjectModal" class="modal">
+    <div class="modal-content">
+        <span id="closeCreateProjectModal" class="close-btn">&times;</span>
+        <h3>Create New Project</h3>
+        <input type="text" id="newProjectNameInput" placeholder="Project name">
+        <label for="newProjectLanguageSelect">Select Language:</label>
+        <select id="newProjectLanguageSelect">
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+        </select>
+        <button id="createProjectConfirm">Create Project</button>
+    </div>
+</div>
+<script src="index.js"></script>
+<script src="project_panel.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcollaborative_editor=self.webpackChunkcollaborative_editor||[]).push([[5628],{45628:(e,a,l)=>{l.r(a)}}]);
